@@ -58,7 +58,7 @@ class Program
             Blockchain.Insert(0, block_to_Add); //Block an vorderster Stelle in Liste einfügen
 
             //Nach jedem hinzugefügten Block wird geprüft ob dieser echt ist (unverfälscht)
-            //Ist er das nciht, wird er danach wieder entfernt
+            //Ist er das nciht, wird er danach wieder entfernt.
             if (Blockchain[0].previous_hash != Blockchain[1].own_hash)
             {
                 throw new Exception("Ungültiger Block entdeckt, Block "+Blockchain[0].index+ " wird entfernt!");
