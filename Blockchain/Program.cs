@@ -48,7 +48,7 @@ class Program
     static void Main(string[] args)
     {
         //Der Genesisblock ist der erste, er hat einen Index von 0, und manuell selbstfestegelgte Daten
-        Block Genesis = new Block(0, "5€ an Justin überwiesen", 0.ToString(),DateTime.Now);
+        Block Genesis = new Block(0, "5,- an Justin überwiesen", 0.ToString(),DateTime.Now);
         List<Block> Blockchain = new List<Block>() {Genesis}; //Liste (Blockchain) mit Genesisblock füllen
 
         for (int i = 0; i < 30; i++)
