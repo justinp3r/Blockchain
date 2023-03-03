@@ -1,15 +1,7 @@
 # Blockchain
 
-Die Funktion dieses Ansatzes ist folgende:
--Die Implementierung der Blockchain selbst erfolgt mittels einer simplen Liste
--Dieser werden Objekte des Typs Block hinzugefügt
--Klasse Block besitzt Eigenschaften zum speichern der ID, Zeit, usw...
+Die Funktionsweise: 
+Die Implementierung der Blockchain erfolgt mittels einer einfachen Liste, welche durch Objekte des Typs Block ergänzt wird. Die Klasse Block besitzt dabei Eigenschaften zur Speicherung von ID, Zeitstempel und ähnlichen Informationen.
 
 Der Ablauf:
--Es wird die Liste deklariert und der erste Block (Genesisblock) hinzugefügt
--Bei für das erstellen der Blöcke wird eine Forloop verwendet
--Es wird der zul. hinzugefügte Block als [current block] deklariert
--Mit dessen Daten als Parameter wird ein neuer Block erstellt (generate_Block)
--Der neue Block erhält den Hash des alten und erstellt einen eigenen neuen
-
-
+Im Ablauf der Implementierung wird zunächst die Liste deklariert und der erste Block, auch bekannt als Genesisblock, hinzugefügt. Bei der Erstellung der weiteren Blöcke wird eine For-Schleife verwendet. Der zuletzt hinzugefügte Block wird als "current block" deklariert und dessen Daten werden als Parameter für die Erstellung eines neuen Blocks (generate_Block) verwendet. Dabei erhält der neue Block den Hash-Wert des alten Blocks und erstellt einen neuen eigenen Hash-Wert.
